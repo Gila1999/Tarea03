@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d50000;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+footer nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #d50000;
+}
+
+.gallery img {
+    margin: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+}
+
+header h1 {
+    color:white;
+}
+
+h1, h2 {
+    color: #d50000;
+}

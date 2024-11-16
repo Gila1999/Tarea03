@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevilla FC - Galería de Fotos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galería de Fotos del Sevilla FC</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Fotos Relevantes</h2>
+            <div class="gallery">
+                <img src="/images/sevilla-estadio.jpg" alt="Estadio del Sevilla FC" width="300">
+                <img src="/images/sevilla-celebracion.jpg" alt="Celebración de un título" width="300">
+                <img src="/images/sevilla-aficion.jpg" alt="Aficionados del Sevilla FC" width="300">
+            </div>
+        </section>
+    </main>
+        <!-- Footer con Bootstrap -->
+        <footer class="bg-light py-3 mt-4">
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/index}">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/palmares}">Palmarés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/galeria-fotos}">Galería de Fotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/enlaces-externos}">Enlaces Externos</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="text-center">&copy; <span th:text="${currentYear}"></span> Sevilla Fútbol Club</p>
+        </footer>
+</body>
+</html>
