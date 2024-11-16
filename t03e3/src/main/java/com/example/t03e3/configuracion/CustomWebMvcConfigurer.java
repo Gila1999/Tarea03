@@ -5,7 +5,7 @@ import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class CustomWebMvcConfigurer implements WebMvcConfigurer {  // Cambié el nombre de la clase
+public class CustomWebMvcConfigurer implements WebMvcConfigurer {  
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {

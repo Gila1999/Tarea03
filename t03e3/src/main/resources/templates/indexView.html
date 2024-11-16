@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sevilla FC - Descripción General</title>
-
-    <!-- Integrar Bootstrap desde WebJars -->
-    <link rel="stylesheet" href="/webjars/bootstrap/5.3.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/styles.css"> <!-- Tu CSS personalizado -->
-</head>
+<!-- Usamos el fragmento del head -->
+<head th:replace="fragments :: head"></head>
 <body>
+    <!-- Usamos el fragmento del menú -->
+    <div th:replace="fragments :: menu"></div>
+
     <!-- Header con Bootstrap -->
     <header class="bg-danger text-white text-center py-4">
         <h1>Sevilla FC</h1>
@@ -31,27 +27,6 @@
             <img src="/images/sevilla-logo.jpg" alt="Logo del Sevilla FC" class="img-fluid" width="200">
         </section>
     </main>
-
-    <!-- Footer con Bootstrap -->
-    <footer class="bg-light py-3 mt-4">
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" th:href="@{/index}">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" th:href="@{/palmares}">Palmarés</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" th:href="@{/galeria-fotos}">Galería de Fotos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" th:href="@{/enlaces-externos}">Enlaces Externos</a>
-                </li>
-            </ul>
-        </nav>
-        <p class="text-center">&copy; <span th:text="${currentYear}"></span> Sevilla Fútbol Club</p>
-    </footer>
 
     <!-- Scripts de Bootstrap -->
     <script src="/webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
